@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.position-relative {
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.align-to-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#SpanHL{
+  color: rgba(0, 0, 0, 0);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#SpanHL hl {
+  pointer-events: auto;
+  background-color: gray;
 }
 
-.App-link {
-  color: #61dafb;
+#SpanHL .hl-green hl {
+  background-color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#SpanHL .hl-red hl {
+  background-color: red;
+}
+
+#SpanHL .hl-blue hl {
+  background-color: blue;
+}
+
+#SpanHL .hl-purple hl {
+  background-color: purple;
+}
+
+#SpanHL .hl-aqua hl {
+  background-color: aqua;
+}
+
+#SpanHL .hl-orange hl {
+  background-color: orange;
+}
+
+#SpanHL .hl-cadetblue hl {
+  background-color: cadetblue;
+}
+
+#SpanHL .hl-hover hl:hover {
+  opacity: 1;
+  /* color: red; */
+  background-color:rgba(255, 255, 153, 0.5);
+  border: gray solid 1px;
+}
+
+.op-10 hl{
+  opacity: 0.5;
+}
+
+.op-9 hl{
+  opacity: 0.25;
+}
+
+.op-8 hl{
+  opacity: 0.15;
+}
+
+.op-7 hl{
+  opacity: 0.05;
+}
+
+.op-6 hl,
+.op-5 hl,
+.op-4 hl,
+.op-3 hl,
+.op-2 hl,
+.op-1 hl{
+  opacity: 0.025;
 }
