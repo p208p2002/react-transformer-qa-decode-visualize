@@ -1,9 +1,9 @@
 {
-  "name": "react-transfomer-qa-decode-visualize",
+  "name": "react-transformer-qa-decode-visualize",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/p208p2002/react-transfomer-qa-decode-visualize.git"
+    "url": "https://github.com/p208p2002/react-transformer-qa-decode-visualize.git"
   },
   "version": "0.1.0",
   "private": true,
@@ -16,7 +16,7 @@
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
     "react-tooltip": "^4.2.21",
-    "react-transfomer-qa-decode-visualize": "github:p208p2002/react-transfomer-qa-decode-visualize",
+    "react-transformer-qa-decode-visualize": "github:p208p2002/react-transformer-qa-decode-visualize",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
