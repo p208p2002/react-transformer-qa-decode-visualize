@@ -7,7 +7,7 @@ function softmax(arr) {
 
 function HlLayerChild({ hl_context, color, opacity_level }) {
   return (
-    <div style={{ pointerEvents: 'none' }} className={`align-to-parent hl-hover op-${opacity_level} hl-${color}`}
+    <div style={{ pointerEvents: 'none' }} className={`align-to-parent op-${opacity_level} hl-${color}`}
       dangerouslySetInnerHTML={{ __html: hl_context }}
     />
   )

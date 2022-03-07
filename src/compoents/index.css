@@ -14,16 +14,9 @@
     color: rgba(0, 0, 0, 0);
   }
   
-  .span-hl-container hl {
+  .span-hl-container hl{
     pointer-events: auto;
     background-color: gray;
-  }
-  
-  .span-hl-container .hl-hover hl:hover {
-    opacity: 1;
-    color: black;
-    background-color:rgba(255, 255, 153, 0.5) !important;
-    border: gray solid 1px;
   }
   
   .op-10{

@@ -30,7 +30,7 @@ function HlLayerChild(_ref) {
     style: {
       pointerEvents: 'none'
     },
-    className: "align-to-parent hl-hover op-".concat(opacity_level, " hl-").concat(color),
+    className: "align-to-parent op-".concat(opacity_level, " hl-").concat(color),
     dangerouslySetInnerHTML: {
       __html: hl_context
     }
