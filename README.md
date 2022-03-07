@@ -1,4 +1,8 @@
 # React Transformer QA Decode Visualize
+A react component for visualize result of transformer-qa model.
+
+To generate data, see [transformer-qa-decode](https://github.com/p208p2002/transformer-qa-decode).
+
 ![](assets/images/screenshot.png)
 
 ## Usage
