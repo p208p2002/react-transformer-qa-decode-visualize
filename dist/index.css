@@ -1,0 +1,71 @@
+.position-relative {
+    position: relative;
+  }
+  
+  
+  .align-to-parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .span-hl-container{
+    color: rgba(0, 0, 0, 0);
+  }
+  
+  .span-hl-container hl {
+    pointer-events: auto;
+    background-color: gray;
+  }
+  
+  .span-hl-container .hl-hover hl:hover {
+    opacity: 1;
+    color: black;
+    background-color:rgba(255, 255, 153, 0.5) !important;
+    border: gray solid 1px;
+  }
+  
+  .op-10{
+    opacity: 0.55;
+  }
+  
+  .op-9{
+    opacity: 0.25;
+  }
+  
+  .op-8{
+    opacity: 0.15;
+  }
+  
+  .op-7{
+    opacity: 0.05;
+  }
+  
+  .op-6 {
+    opacity: 0.03;
+  
+  }
+  .op-5,
+  .op-4,
+  .op-3,
+  .op-2,
+  .op-1{
+    opacity: 0.02;
+  }
+  
+  .bg-block{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    content: "\200D";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  ul.hl-list{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }

@@ -1,58 +1,35 @@
-import './App.css';
-import data from './dump.json'
+import React from 'react';
 import ReactTooltip from 'react-tooltip';
-
-
-function HlLayer({ hl_context, color, opacity_level }) {
-  console.log(opacity_level)
-  return (
-    <div style={{pointerEvents:'none'}} className={`align-to-parent hl-hover op-${opacity_level} hl-${color}`}
-      dangerouslySetInnerHTML={{ __html: hl_context }}
-    />
-  )
-}
+import albert_data from './dump_albert.json'
+import roberta_data from './dump_roberta.json'
+import { HlLayer, HlList } from './compoents'
+import './compoents/index.css'
 
 function App() {
-  let { context = "", result = [] } = data
 
-  let result_1_3 = result.slice(0, 3).map((r, index) => {
-    let start = r.global_context_start
-    let end = r.global_context_end
-    console.log(context.slice(start, end))
-
-    let hl_span = `<hl data-tip="${r.answer_span}">${context.slice(start, end)}</hl>`
-    let hl_context = context.slice(0, start) + hl_span + context.slice(end, context.length)
-
-    let opacity_level = 10 - index
-    if (opacity_level < 1) {
-      opacity_level = 1
-    }
-    return <HlLayer key={index} hl_context={hl_context} color={'blue'} opacity_level={opacity_level} />
-  })
-
-  let result_4_6 = result.slice(3, 6).map((r, index) => {
-    let start = r.global_context_start
-    let end = r.global_context_end
-    console.log(context.slice(start, end))
-
-    let hl_span = `<hl data-tip="${r.answer_span}">${context.slice(start, end)}</hl>`
-    let hl_context = context.slice(0, start) + hl_span + context.slice(end, context.length)
-
-    let opacity_level = 10 - index
-    if (opacity_level < 1) {
-      opacity_level = 1
-    }
-    return <HlLayer key={index} hl_context={hl_context} color={'red'} opacity_level={opacity_level} />
-  })
+  let { context = "" } = albert_data
 
   return (
-    <div className="App">
+    <div style={{ width: 800, padding: 20 }}>
+
+      <div>
+        <h4>Albert</h4>
+        <p>{albert_data.question}</p>
+        <HlList data={albert_data} color='red' />
+        <hr />
+        <h4>Roberta</h4>
+        <p>{roberta_data.question}</p>
+        <HlList data={roberta_data} color='blue' />
+        <hr />
+      </div>
+
+      <h4>Context</h4>
       <div className="position-relative">
         {context}
-      </div>
-      <div id="SpanHL">
-        {result_1_3}
-        {result_4_6}
+        <div className="span-hl-container align-to-parent">
+          <HlLayer data={albert_data} color='red' />
+          <HlLayer data={roberta_data} color='blue' />
+        </div>
       </div>
 
       <ReactTooltip />
