@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactTooltip from 'react-tooltip';
+
 function softmax(arr) {
   return arr.map(function (value, index) {
     return Math.exp(value) / arr.map(function (y /*value*/) { return Math.exp(y) }).reduce(function (a, b) { return a + b })
@@ -29,6 +31,18 @@ export function HlLayer({ data, color }) {
     return <HlLayerChild key={index} hl_context={hl_context} color={color} opacity_level={opacity_level} />
   })
   return layers
+}
+
+export function HlLayerContainer({ context, children }) {
+  return (
+    <div className="position-relative">
+      {context}
+      <div className="span-hl-container align-to-parent">
+        {children}
+      </div>
+      <ReactTooltip />
+    </div>
+  )
 }
 
 export function HlList({ data, color }) {
