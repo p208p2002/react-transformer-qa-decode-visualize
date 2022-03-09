@@ -1,12 +1,12 @@
 {
   "name": "react-transformer-qa-decode-visualize",
   "main": "dist/index.js",
+  "files":["dist/*"],
   "repository": {
     "type": "git",
     "url": "https://github.com/p208p2002/react-transformer-qa-decode-visualize.git"
   },
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.2",

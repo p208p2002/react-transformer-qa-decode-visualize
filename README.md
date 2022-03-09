@@ -8,7 +8,7 @@ To generate data, see [transformer-qa-decode](https://github.com/p208p2002/trans
 ## Usage
 ### Install
 ```sh
-npm install --save https://github.com/p208p2002/react-transformer-qa-decode-visualize.git
+npm i react-transformer-qa-decode-visualize
 ```
 ### Import
 ```js
