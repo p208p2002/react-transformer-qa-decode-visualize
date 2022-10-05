@@ -1,12 +1,6 @@
 import React from 'react';
 import ReactTooltip from 'react-tooltip';
 
-function softmax(arr) {
-  return arr.map(function (value, index) {
-    return Math.exp(value) / arr.map(function (y /*value*/) { return Math.exp(y) }).reduce(function (a, b) { return a + b })
-  })
-}
-
 function HlLayerChild({ hl_context, color, opacity_level }) {
   return (
     <div style={{ pointerEvents: 'none' }} className={`align-to-parent op-${opacity_level} hl-${color}`}
@@ -47,7 +41,7 @@ export function HlLayerContainer({ context, children }) {
 
 export function HlList({ data, color }) {
   let { result = [] } = data
-  let probs = softmax(result.map((d) => d.start_logit))
+  let probs = result.map((d) => d.score)
   return (
     <ul className='hl-list'>
       {probs.map((prob, index) => {

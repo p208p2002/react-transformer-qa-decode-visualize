@@ -13,7 +13,8 @@
             "global_context_start": 36,
             "global_context_end": 54,
             "start_logit": 4.354878902435303,
-            "end_logit": 3.560732126235962
+            "end_logit": 3.560732126235962,
+            "score":0.3
         },
         {
             "answer_span": "Floresta Amazônica or Amazônia",
@@ -31,7 +32,8 @@
             "global_context_start": 36,
             "global_context_end": 66,
             "start_logit": 4.354878902435303,
-            "end_logit": 2.4752848148345947
+            "end_logit": 2.4752848148345947,
+            "score":0.05
         },
         {
             "answer_span": "7,000,000 square kilometres",
@@ -46,7 +48,8 @@
             "global_context_start": 339,
             "global_context_end": 366,
             "start_logit": 3.910907030105591,
-            "end_logit": 3.7580790519714355
+            "end_logit": 3.7580790519714355,
+            "score":0.05
         },
         {
             "answer_span": "Forêt amazonienne",
@@ -61,7 +64,8 @@
             "global_context_start": 132,
             "global_context_end": 149,
             "start_logit": 2.8880257606506348,
-            "end_logit": 2.438236713409424
+            "end_logit": 2.438236713409424,
+            "score":0.05
         },
         {
             "answer_span": "The Amazon rainforest",
@@ -75,7 +79,8 @@
             "global_context_start": 1,
             "global_context_end": 22,
             "start_logit": 2.7142629623413086,
-            "end_logit": 2.253371238708496
+            "end_logit": 2.253371238708496,
+            "score":0.05
         },
         {
             "answer_span": "Amazonia",
@@ -88,7 +93,8 @@
             "global_context_start": 202,
             "global_context_end": 210,
             "start_logit": 2.198216676712036,
-            "end_logit": 2.397026777267456
+            "end_logit": 2.397026777267456,
+            "score":0.05
         },
         {
             "answer_span": "2,700,000 sq mi)",
@@ -105,7 +111,8 @@
             "global_context_start": 368,
             "global_context_end": 384,
             "start_logit": 1.903254747390747,
-            "end_logit": 3.1095969676971436
+            "end_logit": 3.1095969676971436,
+            "score":0.05
         },
         {
             "answer_span": "2,700,000 sq mi",
@@ -121,7 +128,8 @@
             "global_context_start": 368,
             "global_context_end": 383,
             "start_logit": 1.903254747390747,
-            "end_logit": 2.305504083633423
+            "end_logit": 2.305504083633423,
+            "score":0.05
         },
         {
             "answer_span": "Amazoneregenwoud",
@@ -137,7 +145,8 @@
             "global_context_start": 158,
             "global_context_end": 174,
             "start_logit": 1.6535143852233887,
-            "end_logit": 1.8470683097839355
+            "end_logit": 1.8470683097839355,
+            "score":0.05
         },
         {
             "answer_span": "Amazônia",
@@ -150,7 +159,8 @@
             "global_context_start": 58,
             "global_context_end": 66,
             "start_logit": 1.5431318283081055,
-            "end_logit": 2.4752848148345947
+            "end_logit": 2.4752848148345947,
+            "score":0.05
         }
     ],
     "context": "\nThe Amazon rainforest (Portuguese: Floresta Amazônica or Amazônia; Spanish: Selva Amazónica, Amazonía or usually Amazonia; French: Forêt amazonienne; Dutch: Amazoneregenwoud), also known in English as Amazonia or the Amazon Jungle, is a moist broadleaf forest that covers most of the Amazon basin of South America. This basin encompasses 7,000,000 square kilometres (2,700,000 sq mi), of which 5,500,000 square kilometres (2,100,000 sq mi) are covered by the rainforest. This region includes territory belonging to nine nations. The majority of the forest is contained within Brazil, with 60% of the rainforest, followed by Peru with 13%, Colombia with 10%, and with minor amounts in Venezuela, Ecuador, Bolivia, Guyana, Suriname and French Guiana. States or departments in four nations contain \"Amazonas\" in their names. The Amazon represents over half of the planet's remaining rainforests, and comprises the largest and most biodiverse tract of tropical rainforest in the world, with an estimated 390 billion individual trees divided into 16,000 species.\n",
