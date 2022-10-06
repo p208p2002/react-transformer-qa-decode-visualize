@@ -29,11 +29,15 @@ export function HlLayer({ data, color }) {
 
 export function HlLayerContainer({ context, children }) {
   return (
-    <div className="position-relative">
-      {context}
+    <div className="hl-layer-container position-relative">
       <div className="span-hl-container align-to-parent">
         {children}
       </div>
+      
+      <div style={{backgroundColor:'rgba(0,0,0,0)',position:'absolute','pointer-events':'none'}}>
+        {context}
+      </div>
+      
       <ReactTooltip />
     </div>
   )
@@ -45,16 +49,31 @@ export function HlList({ data, color }) {
   return (
     <ul className='hl-list'>
       {probs.map((prob, index) => {
-        let opacity_level = 10 - index
-        if (opacity_level < 1) {
-          opacity_level = 1
-        }
         return (
           <li
             key={index}
-            className={`position-relative`}>
-            <b style={{ paddingLeft: 3, width: 22, display: 'inline-block' }}>{index + 1}.</b> {(prob * 100).toFixed(2)}% {data.result[index].answer_span}
-            <span className={`op-${opacity_level} bg-block`} style={{ backgroundColor: color }} />
+            className={`position-relative`}
+          >
+             <span style={{
+                position:'absolute',
+                backgroundColor:color,
+                content:"\\00A0",
+                width:'100%',
+                height:20,
+                opacity:prob
+            }}/>
+
+            <span style={{
+              position:'absolute',
+              backgroundColor:'rgba(0,0,0,0)',
+              width:'100%'
+            }}>
+              <b style={{ paddingLeft: 3, width: 22, display: 'inline-block' }}>{index + 1}.</b> {(prob * 100).toFixed(2)}% {data.result[index].answer_span}
+            </span>
+
+          
+            {/* <span>{data.result[index].answer_span}</span> */}
+           
           </li>
         )
       })}
