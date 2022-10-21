@@ -30,11 +30,12 @@ export function HlLayer({ data, color }) {
 export function HlLayerContainer({ context, children }) {
   return (
     <div className="hl-layer-container position-relative">
-      <div className="span-hl-container align-to-parent">
+
+      <div className="span-hl-container">
         {children}
       </div>
       
-      <div style={{backgroundColor:'rgba(0,0,0,0)',position:'absolute','pointer-events':'none'}}>
+      <div style={{backgroundColor:'rgba(0,0,0,0)','pointer-events':'none','position':'relative'}}>
         {context}
       </div>
       
